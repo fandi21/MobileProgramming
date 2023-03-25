@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Mobile Programming"
+        android:textColor="@color/red"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnModul1"
+        android:layout_width="124dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="128dp"
+        android:background="@color/test"
+        android:fontFamily="@font/aclonica"
+        android:text="Modul 1"
+        android:textColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnModul2"
+        android:layout_width="124dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/test"
+        android:fontFamily="@font/aclonica"
+        android:text="Pengenalan Variabel"
+        android:textColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnModul1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPerhitungan"
+        android:layout_width="124dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/test"
+        android:fontFamily="@font/aclonica"
+        android:text="Perhitungan"
+        android:textColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnModul2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
