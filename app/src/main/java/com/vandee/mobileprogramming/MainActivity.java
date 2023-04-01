@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnMdl1, btnMdl2, MenuPerhitungan;
+    Button btnMdl1, btnMdl2, MenuPerhitungan, dsbh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         btnMdl1 = findViewById(R.id.btnModul1);
         btnMdl2 = findViewById(R.id.btnModul2);
         MenuPerhitungan = findViewById(R.id.btnPerhitungan);
+        dsbh = findViewById(R.id.btnDashboard);
 
         btnMdl1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +41,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, com.vandee.mobileprogramming.MenuPerhitungan.class);
+                startActivity(intent);
+            }
+        });
+
+        dsbh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, com.vandee.mobileprogramming.dashboard.dashboard.class);
                 startActivity(intent);
             }
         });

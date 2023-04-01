@@ -23,7 +23,7 @@ public class MenuPerhitungan extends AppCompatActivity {
         lpp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MenuPerhitungan.this,LuasPersegiPanjang.class);
+                Intent intent = new Intent(MenuPerhitungan.this, LuasPersegiPanjang.class);
                 startActivity(intent);
             }
         });

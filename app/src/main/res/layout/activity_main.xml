@@ -61,4 +61,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnModul2" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDashboard"
+        android:layout_width="124dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/test"
+        android:fontFamily="@font/aclonica"
+        android:text="Dashboard"
+        android:textColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPerhitungan" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
