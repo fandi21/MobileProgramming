@@ -39,6 +39,6 @@ public class newsapi extends AppCompatActivity {
     private void showNews(List<NewsHeadlines> list) {
         recyclerView = findViewById(R.id.rv_main);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager());
+        //recyclerView.setLayoutManager(new GridLayoutManager());
     }
 }
