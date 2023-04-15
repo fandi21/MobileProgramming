@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnMdl1, btnMdl2, MenuPerhitungan, dsbh;
+    Button btnMdl1, btnMdl2, MenuPerhitungan, dsbh, newsApi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,5 +53,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        newsApi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, com.vandee.mobileprogramming.newsapi.newsapi.class);
+                startActivity(intent);
+            }
+        });
     }
 }

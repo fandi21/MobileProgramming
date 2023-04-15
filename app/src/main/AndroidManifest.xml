@@ -14,7 +14,7 @@
         android:theme="@style/Theme.MobileProgramming"
         tools:targetApi="31">
         <activity
-            android:name=".newsapi"
+            android:name=".newsapi.newsapi"
             android:exported="false" />
         <activity
             android:name=".dashboard.dashboard"
