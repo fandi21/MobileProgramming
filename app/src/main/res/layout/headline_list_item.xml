@@ -24,6 +24,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="23sp"
                 android:textStyle="bold"
+                android:text="sasa"
                 android:textColor="@color/black"
                 android:maxLength="3"/>
             <TextView
@@ -32,6 +33,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                android:text="dodol"
                 android:textColor="@color/purple_500"
                 android:layout_marginTop="6dp"
                 android:maxLength="1"/>

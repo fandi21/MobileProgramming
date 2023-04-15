@@ -15,22 +15,24 @@ import java.util.List;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder> {
 
-    private Context context;
-    private List<NewsHeadlines> headlines;
+    private final List<NewsHeadlines> headlines;
 
     public CustomAdapter(Context context, List<NewsHeadlines> headlines) {
-        this.context = context;
         this.headlines = headlines;
     }
 
     @NonNull
     @Override
     public CustomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new CustomViewHolder(LayoutInflater.from(context).inflate(R.layout.headline_list_item, parent, false));
+        return new CustomViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.headline_list_item, parent, false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
+        final NewsHeadlines newsHeadlines = headlines.get(position);
+
+        String imgUrl = newsHeadlines.getUrlToImage();
+
         holder.text_title.setText(headlines.get(position).getTitle());
         holder.text_source.setText(headlines.get(position).getSource().getName());
 

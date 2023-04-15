@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         btnMdl2 = findViewById(R.id.btnModul2);
         MenuPerhitungan = findViewById(R.id.btnPerhitungan);
         dsbh = findViewById(R.id.btnDashboard);
+        newsApi = findViewById(R.id.btnNewsApi);
 
         btnMdl1.setOnClickListener(new View.OnClickListener() {
             @Override
