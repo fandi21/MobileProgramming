@@ -22,21 +22,19 @@
                 android:id="@+id/text_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="23sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:text="sasa"
-                android:textColor="@color/black"
-                android:maxLength="3"/>
+                android:textColor="@color/black"/>
             <TextView
                 android:id="@+id/text_source"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="12sp"
                 android:textStyle="bold"
                 android:text="dodol"
                 android:textColor="@color/purple_500"
-                android:layout_marginTop="6dp"
-                android:maxLength="1"/>
+                android:layout_marginTop="6dp"/>
         </LinearLayout>
         <ImageView
             android:id="@+id/img_headline"

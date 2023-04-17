@@ -23,19 +23,19 @@ public class newsapi extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_newsapi);
 
-        dialog = new ProgressDialog(this);
+        /*dialog = new ProgressDialog(this);
         dialog.setTitle("Ambil Data News");
-        dialog.show();
+        dialog.show();*/
 
         RequestManager manager = new RequestManager(this);
-        manager.getNewsHeadlines(listener, "null", "general");
+        manager.getNewsHeadlines(listener, null, "general");
     }
 
-    private final OnFetchDataListener<List<NewsApiResponses>> listener = new OnFetchDataListener<List<NewsApiResponses>>() {
+    private final OnFetchDataListener<NewsApiResponses> listener = new OnFetchDataListener<NewsApiResponses>() {
         @Override
         public void onFetchData(List<NewsHeadlines> list, String message) {
             showNews(list);
-            dialog.dismiss();
+            //dialog.dismiss();
         }
 
         @Override
