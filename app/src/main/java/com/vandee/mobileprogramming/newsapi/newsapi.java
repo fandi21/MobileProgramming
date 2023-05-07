@@ -1,6 +1,7 @@
 package com.vandee.mobileprogramming.newsapi;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -9,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.vandee.mobileprogramming.MainActivity;
 import com.vandee.mobileprogramming.R;
@@ -22,11 +24,29 @@ public class newsapi extends AppCompatActivity implements SelectListener, View.O
     CustomAdapter adapter;
     ProgressDialog dialog;
     Button b1, b2, b3, b4, b5, b6, b7;
+    SearchView searchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_newsapi);
+
+        searchView = findViewById(R.id.serach_view);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                dialog.setTitle("Fatching news article of "+ query);
+                dialog.show();
+                RequestManager manager = new RequestManager(newsapi.this);
+                manager.getNewsHeadlines(listener, query, "general");
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                return false;
+            }
+        });
 
         dialog = new ProgressDialog(this);
         dialog.setTitle("Ambil Data News");
@@ -54,13 +74,18 @@ public class newsapi extends AppCompatActivity implements SelectListener, View.O
     private final OnFetchDataListener<NewsApiResponses> listener = new OnFetchDataListener<NewsApiResponses>() {
         @Override
         public void onFetchData(List<NewsHeadlines> list, String message) {
-            showNews(list);
-            dialog.dismiss();
+            if(list.isEmpty()){
+                Toast.makeText(newsapi.this, "No data found...!!", Toast.LENGTH_SHORT).show();
+                dialog.dismiss();
+            }else {
+                showNews(list);
+                dialog.dismiss();
+            }
         }
 
         @Override
         public void onError(String message) {
-
+            Toast.makeText(newsapi.this, "An error Occured!!!", Toast.LENGTH_SHORT).show();
         }
     };
 

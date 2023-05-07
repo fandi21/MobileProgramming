@@ -84,9 +84,8 @@
             android:layout_height="?attr/actionBarSize"
             app:iconifiedByDefault="false"
             app:defaultQueryHint="Search News...">
-
         </androidx.appcompat.widget.SearchView>
-    </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_main"
