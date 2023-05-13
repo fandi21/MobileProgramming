@@ -7,6 +7,16 @@
     android:background="@drawable/bg_android"
     android:orientation="vertical"
     tools:context=".login.LoginActivity">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="239dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="493dp"
+        android:src="@drawable/mercu" />
     <TextView
         android:id="@+id/txt_login"
         android:layout_width="148dp"
