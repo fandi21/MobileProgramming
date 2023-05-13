@@ -7,7 +7,6 @@
     android:background="@drawable/bg_android"
     android:orientation="vertical"
     tools:context=".login.LoginActivity">
-
     <TextView
         android:id="@+id/txt_login"
         android:layout_width="148dp"
@@ -25,7 +24,6 @@
         android:textColor="@color/login"
         android:textSize="45sp"
         android:textStyle="bold" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,7 +38,6 @@
         android:textColor="@color/login"
         android:textSize="20sp"
         android:textStyle="bold" />
-
     <EditText
         android:layout_width="331dp"
         android:layout_height="45dp"
@@ -51,7 +48,6 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="298dp"
         android:background="@drawable/edit_text" />
-
     <TextView
         android:layout_width="109dp"
         android:layout_height="wrap_content"
@@ -66,7 +62,6 @@
         android:textColor="@color/login"
         android:textSize="20sp"
         android:textStyle="bold" />
-
     <EditText
         android:layout_width="331dp"
         android:layout_height="45dp"
@@ -77,4 +72,47 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="212dp"
         android:background="@drawable/edit_text" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="233dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="180dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Forgot Password?"
+        android:textColor="@color/login"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="331dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="157dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/login" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="OR"
+            android:textColor="@color/login" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/login"/>
+    </LinearLayout>
 </RelativeLayout>
