@@ -10,4 +10,5 @@
     <color name="red">#FF0000</color>
     <color name="test">#74ADBC</color>
     <color name="login">#AF0EBD</color>
+    <color name="bg">#aeaeae</color>
 </resources>

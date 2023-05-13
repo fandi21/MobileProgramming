@@ -12,7 +12,6 @@
         android:layout_width="148dp"
         android:layout_height="62dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="40dp"
@@ -72,7 +71,6 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="212dp"
         android:background="@drawable/edit_text" />
-
     <TextView
         android:layout_width="140dp"
         android:layout_height="wrap_content"
@@ -86,7 +84,6 @@
         android:text="Forgot Password?"
         android:textColor="@color/login"
         android:textSize="15sp" />
-
     <LinearLayout
         android:layout_width="331dp"
         android:layout_height="21dp"
@@ -114,5 +111,59 @@
             android:layout_height="1dp"
             android:layout_weight="1"
             android:background="@color/login"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="128dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="270dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/btn_login"
+        android:text="Login"
+        android:textColor="@color/white" />
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="201dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/poppins"
+        android:text="New Here? Register"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="85dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/facebook"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/instagram"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/google"
+            android:layout_margin="5dp"/>
     </LinearLayout>
 </RelativeLayout>
